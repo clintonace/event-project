@@ -10,11 +10,20 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
 
-    public function createEvent(EventsRequest $request, $id = null)
+    public function eventCreateUpdate(EventsRequest $request, $id = null)
     {
+
+
+        dd($request->all());
 
         $data = $request->all();
 
+        if ($request->has('host_image')) {
+
+            $imagePath = imageUploader($request->file('host_image'), auth()->user()->name, 'host-images');
+
+            $data['host_image']= $imagePath;
+        }
         if ($request->has('banner_1')) {
 
             $imagePath = imageUploader($request->file('banner_1'), auth()->user()->name, 'event-banners');

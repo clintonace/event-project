@@ -607,6 +607,8 @@
 <!-- Dashboard Project Page js -->
 <script src="/a-assets/assets/js/pages/dashboard.js"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places"></script>
+
 
 
 <svg id="SvgjsSvg1202" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -616,3 +618,27 @@
  <polyline id="SvgjsPolyline1204" points="0,0"></polyline>
  <path id="SvgjsPath1205" d="M0 0 "></path>
 </svg>
+
+{{-- Third part scripts --}}
+
+{{-- Auto complete --}}
+<script>
+    function initAutocomplete() {
+      const input = document.getElementById("locationInput");
+      new google.maps.places.Autocomplete(input);
+    }
+
+    window.onload = initAutocomplete;
+  </script>
+
+{{-- CKEditor --}}
+
+<script src="https://cdn.ckeditor.com/ckeditor5/41.0.0/classic/ckeditor.js"></script>
+  <script>
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
+  </script>
+{{-- Third part scripts --}}

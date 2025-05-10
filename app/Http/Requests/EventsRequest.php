@@ -11,7 +11,7 @@ class EventsRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -30,13 +30,13 @@ class EventsRequest extends FormRequest
             'sponsors' => 'nullable|string',
             'location' => 'nullable|string|max:255',
             'start_date' => 'required|date|after_or_equal:today',
-            'start_time' => 'required|date_format:H:i',
+            'start_time' => 'required',
             'end_date' => 'nullable|date|after_or_equal:start_date',
-            'end_time' => 'nullable|date_format:H:i',
+            'end_time' => 'nullable',
             'banner_1' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
             'banner_2' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
             'capacity' => 'nullable|integer|min:1',
-            'is_paid' => 'required|boolean',
+            'is_paid' => 'required',
             'price' => 'nullable|numeric|min:0|required_if:is_paid,1',
             'category' => 'nullable|string|max:255',
             'links' => 'nullable',

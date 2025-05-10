@@ -27,10 +27,11 @@ return new class extends Migration
             $table->longText('banner_1')->nullable();
             $table->longText('banner_2')->nullable();
             $table->integer('capacity')->nullable();
-            $table->boolean('is_paid')->default(false);
+            $table->string('is_paid')->nullable();
             $table->decimal('price', 8, 2)->nullable();
             $table->string('category')->nullable();
             $table->longText('links')->nullable();
+            $table->string('status')->nullable(); // 1=active, 0=inactive
             $table->timestamps();
         });
     }
