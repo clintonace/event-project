@@ -5,6 +5,28 @@
 
         <main class="flex-grow p-6">
 
+             <!-- Page Title Start -->
+             <div class="flex justify-between items-center mb-6">
+                <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">Create/Update</h4>
+
+                <div class="md:flex hidden items-center gap-2.5 text-sm font-semibold">
+                    <div class="flex items-center gap-2">
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Dashboard</a>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Create/Update</a>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
+                        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400" aria-current="page">{{$event?->title}}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Title End -->
+
             <div class="card">
                 <div class="card-header">
                     <div class="flex justify-between items-center">

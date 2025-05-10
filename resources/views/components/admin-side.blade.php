@@ -43,7 +43,7 @@
                                 </li>
 
                                 <li class="menu-title">Apps</li>
-
+{{--
                                 <li class="menu-item">
                                     <a href="apps-calendar.html" class="menu-link">
                                         <span class="menu-icon"><i class="mgc_calendar_line"></i></span>
@@ -70,7 +70,7 @@
                                         <span class="menu-icon"><i class="mgc_task_2_line"></i></span>
                                         <span class="menu-text">Kanban</span>
                                     </a>
-                                </li>
+                                </li> --}}
 
                                 <li class="menu-item">
                                     <a href="javascript:void(0)" data-fc-type="collapse"
@@ -94,7 +94,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="menu-title">Custom</li>
+                                {{-- <li class="menu-title">Custom</li>
 
                                 <li class="menu-item">
                                     <a href="javascript:void(0)" data-fc-type="collapse"
@@ -581,7 +581,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> --}}
                             </ul>
 
                             <!-- Help Box Widget -->
@@ -595,9 +595,9 @@
                                         </svg>
                                     </div>
                                     <h5 class="mb-2">Unlimited Access</h5>
-                                    <p class="mb-3">Upgrade to plan to get access to unlimited reports</p>
+                                    <p class="mb-3">Lets hook you up to events and services that will make your event a huge success</p>
                                     <a href="javascript: void(0);"
-                                        class="btn btn-sm bg-secondary text-white">Upgrade</a>
+                                        class="btn btn-sm bg-secondary text-white">Home Page</a>
                                 </div>
                             </div>
                         </div>
